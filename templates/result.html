@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthcare Predictor - Result</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url("https://media.istockphoto.com/id/1477430518/photo/medical-cybersecurity-tablet-and-hands-of-doctor-surgeon-or-nurse-with-virtual-hologram-for.webp?b=1&s=170667a&w=0&k=20&c=Yn-INdMzY8LwvcrP2Dq0Q4hSiuF7npyWksvuRN_E5Zg=");
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.8
+        ); /* Add opacity to container */
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 400px;
+        text-align: center;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+
+      .highlight {
+        color: #ff5722; /* Adjust color as needed */
+        font-weight: bold;
+      }
+
+      a {
+        color: #4caf50;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Healthcare Predictor - Result</h1>
+      <p>
+        The medical condition you are at most risk is:
+        <span class="highlight">{{ predicted_condition }}</span>
+      </p>
+      <a href="/">Back to Form</a>
+    </div>
+  </body>
+</html>
